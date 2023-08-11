@@ -102,6 +102,233 @@ class HelloWorld
                             transform: translate(18px);
                         }
                         /* Toggle Button (end) */
+                        /* Dark Mode for whole page (start) */
+                        .dark .c-main,
+                        .dark .c-modal,
+                        .dark .announcement-section,
+                        .dark .c-input,
+                        .dark .p-AD02002-info__item,
+                        .dark .c-select__item,
+                        .dark .c-btn.--bl,
+                        .dark .ui-datepicker,
+                        .dark .c-table-head,
+                        .dark .c-table__th,
+                        .dark .c-table__td,
+                        .dark .c-table-body.--border .c-table__tr:nth-of-type(even) .c-table__td,
+                        .dark .c-textarea,
+                        .dark .p-AD02004-table__th1,
+                        .dark .p-AD02004-table__th2,
+                        .dark .p-AD02004-table__th3,
+                        .dark .p-AD02004-table__th4,
+                        .dark .p-AD02004-table__th5,
+                        .dark .p-AD02004-table__td1,
+                        .dark .p-AD02004-table__td2,
+                        .dark .p-AD02004-table__td3,
+                        .dark .p-AD02004-table__td4,
+                        .dark .discount-input,
+                        .dark .select2-container--default .select2-selection--multiple,
+                        .dark .select2-dropdown,
+                        .dark .account-c-input {
+                            background-color: var(--dark-grey-800);
+                        }
+
+                        .dark .c-header,
+                        .dark body,
+                        .dark .value-container,
+                        .dark .c-table-head,
+                        .dark .u-heading-h1,
+                        .dark .p-AD02002-info__item p,
+                        .dark .c-select__item,
+                        .dark .c-modal-header__title.--dialog {
+                            color: var(--white-100);
+                        }
+
+                        .dark .c-header,
+                        .dark .c-sidebar,
+                        .dark .c-box.--frame,
+                        .dark .graph-row,
+                        .dark .total-percent,
+                        .dark .circular-progress::before,
+                        .dark .p-AD02016,
+                        .dark section.p-AD02013,
+                        .dark section.p-AD02011,
+                        .dark section.p-AD02003,
+                        .dark .p-AD02004-section,
+                        .dark .p-AD02006-section,
+                        .dark .p-AD02007-table .c-table__th,
+                        .dark .p-AD02007-table .c-table__td,
+                        .dark .dark-switch-check {
+                            background-color: var(--dark-grey-900);
+                        }
+
+                        .dark .c-sidebar {
+                            border-right: 1px solid var(--dark-grey-500);
+                        }
+
+                        .dark .c-sidebar-nav__list>.c-sidebar-nav__item {
+                            border-bottom: 1px solid var(--dark-grey-500);
+                        }
+
+                        .dark a,
+                        .dark .c-header-primary-nav__profile,
+                        .dark .c-sidebar-nav__link.is-current,
+                        .dark .c-btn.--frame.--search,
+                        .dark .c-btn.--search,
+                        .dark .c-btn.--bl,
+                        .dark .c-btn.--edit,
+                        .dark .u-link.--color,
+                        .dark .c-btn.--gr,
+                        .dark .c-btn,
+                        .dark .c-btn.--frame.--shade {
+                            color: var(--yellow);
+                        }
+
+                        .dark .dark-switch,
+                        .dark .c-btn.--search,
+                        .dark .c-btn.--frame.--search,
+                        .dark .c-btn.--bl,
+                        .dark .c-sidebar-nav__link.is-current,
+                        .dark .c-checkbox__label,
+                        .dark .c-btn.--edit,
+                        .dark .c-checkbox__input:disabled+.c-checkbox__label,
+                        .dark .c-btn.--frame.--shade,
+                        .dark .c-radio__label,
+                        .dark .c-btn:disabled,
+                        .dark .c-btn.--gr,
+                        .dark .select2-container--default .select2-selection--multiple .select2-selection__choice,
+                        .dark .collapse-link,
+                        .dark .collapse,
+                        .dark .c-footer {
+                            background-color: var(--dark-grey-700) !important;
+                        }
+
+                        .dark a:hover,
+                        .dark .c-header-primary-nav__profile:hover,
+                        .dark .c-sidebar-nav__link.is-current:hover,
+                        .dark .c-btn.--frame.--search:hover,
+                        .dark .c-btn.--search:hover,
+                        .dark .c-btn.--bl:hover,
+                        .dark .c-btn.--edit:hover,
+                        .dark .u-link.--color:hover,
+                        .dark .c-btn.--gr:hover,
+                        .dark .c-btn:hover,
+                        .dark .c-btn.--frame.--shade:hover {
+                            color: var(--white-100);
+                            transition: 0.5s;
+                        }
+
+                        .dark .c-input,
+                        .dark .c-btn.--search,
+                        .dark .c-btn.--frame.--search,
+                        .dark .p-AD02002-info__item,
+                        .dark .c-select__item,
+                        .dark .c-btn.--bl,
+                        .dark .c-table,
+                        .dark .c-btn.--edit,
+                        .dark .c-checkbox__label,
+                        .dark .c-textarea,
+                        .dark .c-checkbox__input:disabled+.c-checkbox__label,
+                        .dark .c-btn.--gr,
+                        .dark .p-AD02004-table__th1,
+                        .dark .p-AD02004-table__th2,
+                        .dark .p-AD02004-table__th3,
+                        .dark .p-AD02004-table__th4,
+                        .dark .p-AD02004-table__th5,
+                        .dark .p-AD02004-table__td1,
+                        .dark .p-AD02004-table__td2,
+                        .dark .p-AD02004-table__td3,
+                        .dark .p-AD02004-table__td4,
+                        .dark .c-btn.--frame.--shade,
+                        .dark .c-radio__label,
+                        .dark .discount-input,
+                        .dark .select2-container--default .select2-selection--multiple,
+                        .dark .select2-dropdown,
+                        .dark .account-c-input,
+                        .dark .select2-container--default .select2-selection--multiple .select2-selection__choice,
+                        .dark .collapse-link {
+                            border: 1px solid var(--dark-grey-400) !important;
+                        }
+
+                        .dark .c-sidebar-nav__icon--announcement {
+                            background: url("../../img/admin/belltwo.svg") no-repeat;
+                            background-size: 24px 24px;
+                        }
+
+                        .dark .ui-state-highlight,
+                        .dark .c-modal-header {
+                            background-color: var(--dark-grey-400);
+                        }
+
+                        .dark .c-radio__input:checked+.c-radio__label:before {
+                            background-color: var(--dark-grey-200);
+                        }
+
+                        .dark .ui-datepicker-prev:before {
+                            border-left: 2px solid var(--white-100);
+                            border-top: 2px solid var(--white-100);
+                        }
+
+                        .dark .ui-datepicker-next:before {
+                            border-right: 2px solid var(--white-100);
+                            border-top: 2px solid var(--white-100);
+                        }
+
+                        .dark .c-select:after {
+                            border-color: var(--white-100) transparent transparent transparent;
+                        }
+
+                        .dark .c-table__th,
+                        .dark .c-section-header__title,
+                        .dark .p-AD02003-table-head .c-table__tr:last-of-type th {
+                            border-bottom: 2px solid var(--dark-grey-400);
+                        }
+
+                        .dark .c-table__th,
+                        .dark .c-table__td {
+                            border-right: 1px solid var(--dark-grey-400) !important;
+                        }
+
+                        .dark .c-table__td,
+                        .dark .p-AD02003-table-body .c-table__tr:nth-of-type(even) td {
+                            border-bottom: 1px solid var(--dark-grey-400);
+                        }
+
+                        .dark .c-btn:disabled {
+                            border: 0px !important;
+                        }
+
+                        .dark .c-section-header__title:before {
+                            background-color: var(--yellow);
+                        }
+
+                        .dark .c-btn.--gr.--small,
+                        .dark .c-input:disabled {
+                            color: var(--dark-grey-200) !important;
+                        }
+
+                        .dark .p-AD02004-table__body {
+                            border-top: 5px solid var(--dark-grey-400);
+                        }
+
+                        .dark .p-AD02004-box {
+                            border: 2px solid var(--dark-grey-400);
+                        }
+
+                        .dark .p-AD02007-table,
+                        .dark .p-AD02007-table .c-table__th,
+                        .dark .p-AD02007-table .c-table__td {
+                            border: 0 !important;
+                        }
+
+                        .dark .c-table.--sticky .c-table-head .c-table__th {
+                            border-top: 1px solid var(--dark-grey-400);
+                        }
+
+                        .dark .location-icon {
+                            border: 1px solid var(--white);
+                        }
+
+                        /* Dark Mode for whole page (end) */
                     </style>
                 </head>
             <body>

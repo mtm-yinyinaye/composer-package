@@ -9,7 +9,100 @@ class HelloWorld
         return <<<HTML
             <html>
                 <head>
-                    <link rel="stylesheet" href="style.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <style>
+                        /* CSS Variables (start) */
+                        :root {
+                            --dark-grey-900: #1a1a1a;
+                            --dark-grey-800: #242424;
+                            --dark-grey-700: #2f2f2f;
+                            --dark-grey-500: #3c3c3c4a;
+                            --dark-grey-400: #545454a6;
+                            --dark-grey-200: #8e8e8e;
+                            --dark-grey-100: #a7a7a7;
+                            --white: #fff;
+                            --white-100: #ffffffde;
+                            --white-200: #f1f1f1;
+                            --yellow: #ffff00;
+                        }
+
+                        /* CSS Variables (end) */
+                        html.dark {
+                            color-scheme: dark;
+                        }
+
+                        /* Toggle Button (start) */
+                        .dark-mode-toggle {
+                            margin-right: 10px;
+                        }
+
+                        .dark-switch {
+                            position: relative;
+                            border-radius: 11px;
+                            display: block;
+                            width: 40px;
+                            height: 22px;
+                            flex-shrink: 0;
+                            border: 1px solid var(--dark-grey-700);
+                            background-color: var(--white-200);
+                            transition: border-color .25s, background-color .25s;
+                            cursor: pointer;
+                        }
+
+                        .dark-switch:hover {
+                            border-color: var(--dark-grey-200);
+                        }
+
+                        .dark-switch-check {
+                            position: absolute;
+                            top: 1px;
+                            left: 1px;
+                            width: 18px;
+                            height: 18px;
+                            border-radius: 50%;
+                            background-color: var(--white);
+                            box-shadow: 0 1px 2px rgba(0, 0, 0, .04), 0 1px 2px rgba(0, 0, 0, .06);
+                            transition: background-color .25s, transform .25s;
+                        }
+
+                        .dark-switch-icon {
+                            position: relative;
+                            display: block;
+                            width: 18px;
+                            height: 18px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                        }
+
+                        .dark-switch-icon svg {
+                            position: absolute;
+                            top: 1px;
+                            right: 1px;
+                            width: 16px;
+                            height: 16px;
+                            fill: var(--dark-grey-100);
+                        }
+
+                        .dark .dark-switch-icon svg {
+                            fill: var(--white-100);
+                            transition: opacity .25s;
+                        }
+
+                        .dark-switch-appearance-sun,
+                        .dark .dark-switch-appearance-moon {
+                            opacity: 1;
+                        }
+
+                        .dark-switch-appearance-moon,
+                        .dark .dark-switch-appearance-sun {
+                            opacity: 0;
+                        }
+
+                        .dark .dark-switch-appearance .dark-switch-check {
+                            transform: translate(18px);
+                        }
+                        /* Toggle Button (end) */
+                    </style>
                 </head>
             <body>
                 <div class="dark-mode-toggle">
@@ -31,6 +124,17 @@ class HelloWorld
                     </button>
                 </div>
             </body>
+            <script>
+                $('.dark-switch').click(function () {
+                    var darkMode = localStorage.getItem("dark-mode");
+                    if (darkMode) {
+                        localStorage.setItem("dark-mode", "false");
+                    } else {
+                        localStorage.setItem("dark-mode", "true");
+                    }
+                    document.documentElement.classList.toggle("dark");
+                });
+            </script>
             </html>
         HTML;
     }

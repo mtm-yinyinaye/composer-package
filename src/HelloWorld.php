@@ -6,6 +6,12 @@ class HelloWorld
 {
     public static function sayHello()
     {
-        echo "Hello World, first Composer Package";
+        return <<<HTML
+            <html>
+            <body>
+                <h1>Test From Html Element</h1>
+            </body>
+            </html>
+        HTML;
     }
 }

@@ -1,11 +1,11 @@
 {
-    "name": "mtm-yinyinaye/dark-mode-package",
+    "name": "mtm-yinyinaye/composer-package",
     "description": "This Dark Mode composer is private package",
     "autoload": {
         "psr-4": {
-            "Yinyinaye\\DarkModePackage\\": "src/"
+            "mtm-yinyinaye\\ComposerPackage\\": "src/"
         }
     },
     "minimum-stability": "dev",
-    "require": {}
+    "prefer-stable": true
 }
